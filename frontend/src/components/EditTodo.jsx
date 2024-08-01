@@ -25,7 +25,7 @@ const EditTodo = ({ todo }) => {
     <>
       <button
         type="button"
-        class="btn btn-warning"
+        className="btn btn-warning"
         data-toggle="modal"
         data-target={`#id${todo._id}`}
       >
@@ -33,17 +33,17 @@ const EditTodo = ({ todo }) => {
       </button>
 
       <div
-        class="modal"
+        className="modal"
         id={`id${todo._id}`}
         onClick={() => setTask(todo.task)}
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Edit Todo</h4>
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h4 className="modal-title">Edit Todo</h4>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 onClick={() => setTask(todo.task)}
               >
@@ -51,7 +51,7 @@ const EditTodo = ({ todo }) => {
               </button>
             </div>
 
-            <div class="modal-body">
+            <div className="modal-body">
               <input
                 type="text"
                 className="form-control"
@@ -60,10 +60,10 @@ const EditTodo = ({ todo }) => {
               />
             </div>
 
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-warning"
+                className="btn btn-warning"
                 data-dismiss="modal"
                 onClick={(e) => updateTask(e)}
               >
@@ -71,7 +71,7 @@ const EditTodo = ({ todo }) => {
               </button>
               <button
                 type="button"
-                class="btn btn-danger"
+                className="btn btn-danger"
                 data-dismiss="modal"
                 onClick={() => setTask(todo.task)}
               >
